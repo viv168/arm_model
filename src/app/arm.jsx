@@ -5,7 +5,7 @@ import { useFrame, useThree } from "@react-three/fiber"
 import { Sphere, Cylinder } from "@react-three/drei"
 
 export default function Arm() {
-  useThree()
+  const { camera } = useThree()
   const upperArmRef = useRef(null)
   const lowerArmRef = useRef(null)
   const [isDragging, setIsDragging] = useState(null)

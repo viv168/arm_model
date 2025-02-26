@@ -4,9 +4,9 @@ import Scene from "./scene"
 
 export default function Page() {
   return (
-    <div className="min-h-screen bg-gray-200 p-8">
-      <div className="mx-auto max-w-4xl">
-        <div className="rounded-lg bg-white shadow-lg">
+    <div className="h-screen w-screen">
+      <div className="h-full w-full">
+        <div className="h-full w-full">
           {/* Browser Chrome */}
           <div className="flex items-center border-b border-gray-200 px-4 py-2">
             <div className="flex space-x-2">
@@ -21,7 +21,7 @@ export default function Page() {
             </div>
           </div>
           {/* 3D Scene */}
-          <div className="h-[600px] w-full">
+          <div className="h-[calc(100%-2.5rem)] w-full">
             <Scene />
           </div>
         </div>
