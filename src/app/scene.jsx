@@ -1,7 +1,7 @@
 "use client"
 
 import { Canvas } from "@react-three/fiber"
-import { Grid } from "@react-three/drei"
+import { Grid, OrbitControls } from "@react-three/drei"
 import Arm from "./arm"
 
 export default function Scene() {
@@ -25,7 +25,7 @@ export default function Scene() {
         fadeDistance={30}
         fadeStrength={1}
       />
+      <OrbitControls enablePan={false} enableZoom={true} minPolarAngle={0} maxPolarAngle={Math.PI / 2} />
     </Canvas>
   )
 }
-
